@@ -1,9 +1,11 @@
 import React from "react";
 import '../gamecatalog.scss';
-import { Grid, Button, Select, MenuItem, IconButton, TextField } from '@mui/material';
+import { Grid, Button, Select, MenuItem, IconButton, TextField ,Checkbox  } from '@mui/material';
 import data from "./games.json"
 import SearchIcon from '@mui/icons-material/Search';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import Favorite from '@mui/icons-material/Favorite';
+import { useState } from "react";
 
 const Gamepicker = () => {
     return (
@@ -49,14 +51,15 @@ const TopButtons = () => {
 
 
 const Games = () => {
+    const [boughtGames, setBoughtGames] = useState([])
     return (
         <div  className="games_all">
             {data.map((game, index) => {
                 return (
                     <div className="allgames">
-                        <IconButton ><AddCircleIcon /></IconButton>
+                        <Checkbox checkedIcon={<Favorite />} color="secondary" />
                         <h3>{game.title}</h3>
-                        <p>{game.price}</p>
+                        {(game.price == 0) ? (<p>FREE</p>) : <p>{game.price}</p> }
                     </div>
                 )
             })}
