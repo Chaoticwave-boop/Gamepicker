@@ -1,0 +1,102 @@
+.navbar_main{
+    width: 996px;
+    margin-left: 16%;
+    border: 2px solid black;
+   background-color: rgb(233, 233, 233);
+}
+
+.mainPage {
+    width: 1000px;
+    margin-left: 16%;
+    font-family: sans-serif;
+    h1{
+        border-bottom: 2px solid rgb(198, 198, 198);
+        width: 50%;
+    }
+
+    .nameinfo{
+        text-align: left;
+        .gameinfo{
+            border: 2px solid black;
+            .tags{
+                p{
+                    border: 2px solid black;
+                    margin: 3px;
+                }
+            }
+        }
+        .extrainfo{
+            border: 2px solid black;
+        }
+    }
+
+    .screenshots{
+        border: 2px solid black;
+        height: 140px;
+        img{
+            border: 2px solid black;
+            height: 110px;
+            margin: 3px;
+        }
+    }
+    .requirements{
+        text-align: left;
+        border: 2px solid black;
+    }
+    .reviews{
+        text-align: left;
+        border: solid black;
+        p{
+            width: 50%;
+            font-family: serif;
+        }
+    }
+}
+
+.gamecat{
+    width: 1000px;
+    margin-left: 16%;
+    font-family: sans-serif;
+    border: 3px solid black;
+    
+    .order{
+        margin: 5px;
+    }
+
+    .selectpart{
+        position: relative;
+        right: 80px;
+        padding: 5px;
+        .select{
+            width: 50%;
+        }
+    }
+
+    .price_input{
+        position: relative;
+        left: 80px;
+        padding: 5px;
+        .input{
+            width: 50%;
+        }
+
+    }
+  
+    .allgames{
+        display: flex;
+        border: 1px solid black;
+        margin: 5px;
+      
+        h3{
+            width: 70%;
+            text-align: start
+        }
+        p{
+            width: 20%;
+        }
+    }
+    .games_all{
+        max-height: 550px;
+        overflow: auto;
+    }
+}
