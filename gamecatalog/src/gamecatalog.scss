@@ -58,10 +58,7 @@
     margin-left: 16%;
     font-family: sans-serif;
     border: 3px solid black;
-    
-    .order{
-        margin: 5px;
-    }
+ 
 
     .selectpart{
         position: relative;
@@ -95,8 +92,15 @@
             width: 20%;
         }
     }
+
     .games_all{
-        max-height: 550px;
-        overflow: auto;
+        .showgames{
+            max-height: 550px;
+            overflow: auto;
+        }
+        .order{
+            margin: 5px;
+        }
+
     }
 }
