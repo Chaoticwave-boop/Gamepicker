@@ -1,8 +1,12 @@
 .navbar_main{
     width: 996px;
     margin-left: 16%;
-    border: 2px solid black;
-   background-color: rgb(233, 233, 233);
+    background-color: darkkhaki;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    .button {
+        background-color: darkcyan;
+    }
 }
 
 .mainPage {
@@ -57,8 +61,10 @@
     width: 994px;
     margin-left: 16%;
     font-family: sans-serif;
-    border: 3px solid black;
- 
+    color: white;
+    background-color: darkkhaki;
+    border-radius: 10px;
+    padding: 5px;
 
     .selectpart{
         position: relative;
@@ -66,6 +72,25 @@
         padding: 5px;
         .select{
             width: 50%;
+            background-color: darkcyan;
+            color: white;
+        }
+        .search {
+            position: relative;
+            background-color: darkcyan;;
+            left: 10px;
+            color: white;
+        }
+    }
+    .rating{
+        position: relative;
+        top: 15px;
+        .search{
+            position: relative;
+            bottom: 5px;
+            background-color: darkcyan;
+            left: 10px;
+            color: white;
         }
     }
 
@@ -75,20 +100,51 @@
         padding: 5px;
         .input{
             width: 50%;
+            background-color: darkcyan;
+        }
+        .search {
+            position: relative;
+            background-color: darkcyan;
+            left: 5px;
+            top: 5px;
+            color: white;
         }
 
     }
   
     .allgames{
         display: flex;
-        border: 1px solid black;
+        border-radius: 10px;
         margin: 5px;
+        background-color: darkcyan;
       
-        h3{
+        h3 {
             width: 70%;
             text-align: start
         }
-        p{
+        p {
+            width: 20%;
+        }
+        .check {
+            color: darkkhaki;
+        }
+    }
+
+    .bought_games{
+        display:  flex;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: darkcyan;
+
+        h3 {
+            width: 70%;
+            text-align: start;
+            padding-left: 5px;
+        }
+        .delete {
+            color: white;
+        }
+        p {
             width: 20%;
         }
     }
@@ -100,6 +156,7 @@
         }
         .order{
             margin: 5px;
+            background-color: darkcyan;
         }
 
     }

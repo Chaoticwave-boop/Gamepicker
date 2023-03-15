@@ -7,16 +7,16 @@ const Navbar = () => {
         <div className="navbar_main">
             <Grid container>
                 <Grid item xs={2}>
-                    <Button href="/" variant="contained" color="secondary">MonsterHunter</Button>
+                    <Button href="/" variant="contained" className="button">MonsterHunter</Button>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button href="/Hollowknight" variant="contained" color="secondary">Hollowknight</Button>
+                    <Button href="/Hollowknight" variant="contained" className="button">Hollowknight</Button>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button href="/Eldenring" variant="contained" color="secondary">Elden ring</Button>
+                    <Button href="/Eldenring" variant="contained" className="button">Elden ring</Button>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button href="/Gamepicker" variant="contained" color="secondary">Game Picker</Button>
+                    <Button href="/Gamepicker" variant="contained" className="button">Game Picker</Button>
                 </Grid>
             </Grid>
         </div>
