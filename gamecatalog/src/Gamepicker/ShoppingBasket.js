@@ -20,26 +20,20 @@ const Basket = ({totalPrices, boughtGamesAll}) => {
     const [ total, setTotal ] = useState(totalPrices);
     const [  finalList, setFinalList ] = useState(boughtGamesAll);
 
-    const deleteGame = (game) => {
+    const deleteGame = (game, index) => {
         const newList = finalList.filter((item) => item.title !== game.title);
-        setFinalList(newList);
-
-        setTotal([])
-        console.log(total)
-        newList.map((game) => {
-            total.push(game.price);
-        })
-        console.log(total)
+        setFinalList(newList);   
+        total.splice(index, 1);
     }
 
     return (
         <div>
-            {finalList.map((game) => {
+            {finalList.map((game, index) => {
                 return (
                     <div className="bought_games">
                         <h3>{game.title}</h3>
                         {(game.price == 0) ? (<p>FREE</p>) : <p>{game.price}</p> }
-                        <IconButton className="delete" onClick={() => deleteGame(game)}><DeleteIcon/></IconButton>
+                        <IconButton className="delete" onClick={() => deleteGame(game, index)}><DeleteIcon/></IconButton>
                     </div>
                 )
             })}
